@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keynote Speakers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body{
+          animation: slideUp 0.5s ease;
+        }
+        .coming-soon {
+          min-height: 60vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+          text-align: center;
+          padding: 2rem;
+        }
+  
+        .coming-soon h1 {
+          font-size: 4rem;
+          background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          opacity: 0;
+          transform: translateY(30px);
+          animation: fadeInUp 1s ease forwards;
+        }
+        .submit-paper {
+          color: #fff !important;
+          /* background: #027bff; */
+          background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+          /* -webkit-text-fill-color: transparent; */
+          animation: fadeIn 1s ease;
+        }
+        @keyframes fadeInUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+  
+        .dots {
+          display: inline-flex;
+          font-size: 24px;
+          letter-spacing: 2px;
+          /* animation: dots 2s infinite; */
+        }
+  
+        .dots span{
+          color: #2563eb;
+          animation: blink 1.5s infinite;
+        }
+        .dots span:nth-child(2){
+          animation-delay: 0.2s;
+        }
+        .dots span:nth-child(3){
+          animation-delay: 0.4s;
+        }
+        @keyframes blink {
+          0%, 100% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+        @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+  
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (max-width:768px){
+        body {
+          text-align: justify;
+        }
+        .logo {
+          height: 25px;
+          align-items: justify;
+        }
+        .logo1{
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
+        <img src="cvm.png" alt="CVM" class="logo" />
+        <img src="adit.png" alt="ADIT" class="logo" />
+        <img src="gcet.png" alt="GCET" class="logo" />
+        <img src="mbit.png" alt="MBIT" class="logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">About</a>
+            <div class="dropdown-content">
+              <a href="cvm.html">CVM</a>
+              <a href="cvm-university.html">CVM University</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">SDSTD-2025</a>
+            <div class="dropdown-content">
+              <a href="tracks.html">Tracks</a>
+              <a href="schedule.html">Conference Schedule</a>
+              <a href="call-for-papers.html">Call for Papers</a>
+              <a href="important-dates.html">Important Dates</a>
+              <a href="submission-guidelines.html">Submission Guidelines</a>
+              <a href="#">Registration</a>
+            </div>
+          </li>
+          <li><a href="keynote.html">Keynote Speakers</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Committee</a>
+            <div class="dropdown-content">
+              <a href="organizing.html">Organizing Committee</a>
+              <a href="coordinators.html">Coordinators</a>
+              <a href="track-coordinators.html">Track Coordinators</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="coming-soon">
+        <h1>
+          Coming Soon <span class="dots"><span>...</span></span>
+        </h1>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 SDSTD Conference. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
