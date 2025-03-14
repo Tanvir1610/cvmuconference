@@ -36,12 +36,31 @@
           transform: translateY(0);
         }
       }
+      @media (max-width: 768px) {
+        body {
+          text-align: justify;
+        }
+        .logo {
+          height: 25px;
+          align-items: justify;
+        }
+        .logo1 {
+          height: 40px;
+        }
+        .call-papers h1,h2,ul li,p {
+          text-align: justify;
+          /* font-size: 16px; */
+        }
+        .link{
+          font-size: 12px;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
@@ -131,8 +150,7 @@
           <h2>Contact Information</h2>
           <p>
             All queries related to the conference shall be addressed to:
-            <a href="mailto:cvmconference.sdstd2025@cvmu.edu.in"
-              >cvmconference.sdstd2025@cvmu.edu.in</a
+            <a href="mailto:cvmconference.sdstd2025@cvmu.edu.in" class="link">cvmconference.sdstd2025@cvmu.edu.in</a
             >
           </p>
           <br />

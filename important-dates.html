@@ -13,12 +13,20 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      
+      .content h1 {
+        text-align: center;
+        color: #007bff;
+        font-size: 24px;
+      }
       body {
         animation: slideUp 0.5s ease;
       }
+
       .call-papers h1 {
         text-align: center;
       }
+
       .submit-paper {
         color: #fff !important;
         /* background: #027bff; */
@@ -26,12 +34,14 @@
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
       }
+
       @keyframes fadeInUp {
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
+
       @keyframes slideUp {
         from {
           opacity: 0;
@@ -43,12 +53,33 @@
           transform: translateY(0);
         }
       }
+
+      @media (max-width: 768px) {
+        body {
+          text-align: justify;
+        }
+        .logo {
+          height: 25px;
+          align-items: justify;
+        }
+        .logo1 {
+          height: 40px;
+        }
+        .content div,
+        h1 {
+          text-align: justify;
+        }
+        .date-item,
+        .date-content {
+          text-align: justify;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
@@ -96,43 +127,51 @@
         <div class="dates-timeline">
           <div class="date-item">
             <div class="date">September 15, 2024</div>
-            <div class="date-content">
+            <div class="date-content" style="text-align: justify">
               Announcement of the conference and paper submission
             </div>
           </div>
 
           <div class="date-item">
             <div class="date">March 1, 2025</div>
-            <div class="date-content">Last date of submission of Papers</div>
+            <div class="date-content" style="text-align: justify">
+              Last date of submission of Papers
+            </div>
           </div>
 
           <div class="date-item">
             <div class="date">March 15, 2025</div>
-            <div class="date-content">Extension for paper submission</div>
+            <div class="date-content" style="text-align: justify">
+              Extension for paper submission
+            </div>
           </div>
 
           <div class="date-item">
             <div class="date">April 10, 2025</div>
-            <div class="date-content">
+            <div class="date-content" style="text-align: justify">
               Intimation for paper acceptance and Registration starts
             </div>
           </div>
 
           <div class="date-item">
             <div class="date">May 1, 2025</div>
-            <div class="date-content">Last date of registration</div>
+            <div class="date-content" style="text-align: justify">
+              Last date of registration
+            </div>
           </div>
 
           <div class="date-item">
             <div class="date">June 1, 2025</div>
-            <div class="date-content">
+            <div class="date-content" style="text-align: justify">
               Last date of submission of camera-ready copy and copy right form
             </div>
           </div>
 
           <div class="date-item">
             <div class="date">June 27, 2025</div>
-            <div class="date-content">Conference starts</div>
+            <div class="date-content" style="text-align: justify">
+              Conference starts
+            </div>
           </div>
         </div>
       </section>

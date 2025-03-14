@@ -25,7 +25,11 @@
       }
 
       .social-links a {
-        color: #2563eb;
+        /* color: #2563eb; */
+        background: #027bff;
+        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 1.5rem;
         transition: transform 0.3s ease;
       }
@@ -71,13 +75,30 @@
           transform: translateY(0);
         }
       }
+      @media(max-width:768px){
+        body {
+          text-align: justify;
+        }
+        .logo {
+          height: 25px;
+        }
+        .logo1 {
+          height: 35px;
+        }
+        .content-section h1,p {
+          text-align: justify;
+        }
+        .content-section h2,p{
+          text-align: justify;
+        }
+      }
     </style>
   </head>
 
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
@@ -165,8 +186,10 @@
 
       <p class="website-link">
         Website:
-        <a href="https://www.cvmu.edu.in/" target="_blank"
-          >https://www.cvmu.edu.in/</a
+        <a href="https://www.cvmu.edu.in/" target="_blank" style="background: #027bff;
+        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">https://www.cvmu.edu.in/</a
         >
       </p>
 

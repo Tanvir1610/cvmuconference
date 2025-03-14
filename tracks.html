@@ -6,42 +6,58 @@
     <title>Conference Tracks - SDSTD2025 Conference</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-        body{
-            animation: slideUp 0.5s ease;
+        body {
+          animation: slideUp 0.5s ease;
+          text-align: justify;
         }
-      .content h1 {
-        text-align: center;
-      }
-      .submit-paper {
-        color: #fff !important;
-        /* background: #027bff; */
-        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
-        /* -webkit-text-fill-color: transparent; */
-        animation: fadeIn 1s ease;
-      }
-      @keyframes fadeInUp {
-        to {
-          opacity: 1;
-          transform: translateY(0);
+        .content h1 {
+          text-align: center;
         }
-      }
-      @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
+        .submit-paper {
+          color: #fff !important;
+          /* background: #027bff; */
+          background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+          /* -webkit-text-fill-color: transparent; */
+          animation: fadeIn 1s ease;
+        }
+        @keyframes fadeInUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @media (max-width:768px){
+          body {
+            text-align: justify;
+          }
+          .logo {
+          height: 25px;
+          align-items: justify;
+          }
+        .logo1{
+          height: 40px;
+        }
+        .content h1, .track h2,ul li  {
+          text-align: justify;
+        }
       }
-    }
     </style>
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />

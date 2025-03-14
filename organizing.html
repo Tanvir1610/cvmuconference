@@ -19,6 +19,9 @@
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
       }
+      .member-name, .member-role {
+        text-align: center;
+      }
       @keyframes fadeInUp {
         to {
           opacity: 1;
@@ -36,12 +39,31 @@
           transform: translateY(0);
         }
       }
+      @media (max-width: 768px) {
+        body {
+          text-align: justify;
+        }
+        .logo {
+          height: 25px;
+          align-items: justify;
+        }
+        .logo1 {
+          height: 40px;
+        }
+        .member-image {
+          height: 280px;
+          width: 280px;
+        }
+        .member-name , .member-role {
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
