@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coordinators - SDSTD-2025</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="coordinators.css" />
+    <style>
+      body {
+        animation: slideUp 0.5s ease;
+      }
+      .call-papers h1 {
+        text-align: center;
+      }
+      .submit-paper {
+        color: #fff !important;
+        /* background: #027bff; */
+        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        /* -webkit-text-fill-color: transparent; */
+        animation: fadeIn 1s ease;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+        <img src="cvm.png" alt="CVM" class="logo" />
+        <img src="adit.png" alt="ADIT" class="logo" />
+        <img src="gcet.png" alt="GCET" class="logo" />
+        <img src="mbit.png" alt="MBIT" class="logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">About</a>
+            <div class="dropdown-content">
+              <a href="cvm.html">CVM</a>
+              <a href="cvm-university.html">CVM University</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">SDSTD-2025</a>
+            <div class="dropdown-content">
+              <a href="tracks.html">Tracks</a>
+              <a href="schedule.html">Conference Schedule</a>
+              <a href="call-for-papers.html">Call for Papers</a>
+              <a href="important-dates.html">Important Dates</a>
+              <a href="submission-guidelines.html">Submission Guidelines</a>
+              <a href="#">Registration</a>
+            </div>
+          </li>
+          <li><a href="#">Keynote Speakers</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Committee</a>
+            <div class="dropdown-content">
+              <a href="organizing.html">Organizing Committee</a>
+              <a href="coordinators.html">Coordinators</a>
+              <a href="track-coordinators.html">Track Coordinators</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="coordinators-section">
+        <div class="container">
+          <h1>Coordinators</h1>
+          <p class="section-description">
+            Our Coordinators put in relentless effort to ensure the event runs
+            flawlessly, handling every detail with utmost care. With their
+            expertise and dedication, they oversee logistics, streamline
+            activities, and create a well-organized experience for all
+            participants. Their behind-the-scenes work is instrumental in the
+            event's success. Should you need any assistance or have any
+            questions, our coordinators are always ready to help!
+          </p>
+
+          <div class="coordinators-grid">
+            <div class="coordinator-card">
+              <div class="coordinator-image">
+                <img src="Shrivastav.jpg" alt="Dr. Shivmurti Srivastav" />
+              </div>
+              <div class="coordinator-info">
+                <h3>Dr. Shivmurti Srivastav</h3>
+                <p>Professor & Head,<br />Food Proc. & Tech., ADIT</p>
+                <button class="more-btn" onclick="toggleDetails(this)">
+                  More
+                </button>
+                <div class="additional-info hidden">
+                  <p>
+                    Additional information about Dr. Shivmurti Srivastav will be
+                    displayed here.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coordinator-card">
+              <div class="coordinator-image">
+                <img src="Vinod Patel.jpg" alt="Dr. Vinod Patel" />
+              </div>
+              <div class="coordinator-info">
+                <h3>Dr. Vinod Patel</h3>
+                <p>Professor & Head,<br />Mechatronics, GCET</p>
+                <button class="more-btn" onclick="toggleDetails(this)">
+                  More
+                </button>
+                <div class="additional-info hidden">
+                  <p>
+                    Additional information about Dr. Vinod Patel will be
+                    displayed here.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="coordinator-card">
+              <div class="coordinator-image">
+                <img src="Foram.jpg" alt="Dr. Foram Joshi" />
+              </div>
+              <div class="coordinator-info">
+                <h3>Dr. Foram Joshi</h3>
+                <p>Assistant Professor,<br />Applied Science, MBIT</p>
+                <button class="more-btn" onclick="toggleDetails(this)">
+                  More
+                </button>
+                <div class="additional-info hidden">
+                  <p>
+                    Additional information about Dr. Foram Joshi will be
+                    displayed here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 SDSTD Conference. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scriptcoordinators.js"></script>
+    <script src="coordinators.js"></script>
+  </body>
+</html>
