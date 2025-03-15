@@ -10,6 +10,82 @@
         animation: slideUp 0.8s ease-in;
         text-align: justify;
       }
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: flex;
+        }
+      }
+      .contact {
+        /* background-color: #0b274c;
+        color: white; */
+        color: #fff !important;
+        /* background: #027bff; */
+        background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .contact h2 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .contact p.email {
+        font-size: 18px;
+        margin: 10px 0 20px;
+      }
+
+      /* Contact Form */
+      form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      input[type="email"] {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: white;
+        color: #0b274c;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #007bff;
+        color: white;
+      }
+
+      /* Google Map */
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        form {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        input[type="email"],
+        button {
+          width: 90%;
+          max-width: 300px;
+        }
+      }
+
       .hero h1 {
         background: #027bff;
         background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
@@ -17,7 +93,7 @@
         -webkit-text-fill-color: transparent;
       }
       .submit-paper {
-        color: #fff !important;
+        color: #000 !important;
         /* background: #027bff; */
         background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
         /* -webkit-text-fill-color: transparent; */
@@ -40,34 +116,34 @@
         }
       }
       @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
-    }
-    @media (max-width: 768px){
-      body {
-        text-align: justify;
+      @media (max-width: 768px) {
+        body {
+          text-align: justify;
+        }
+        .logo {
+          height: 25px;
+          align-items: justify;
+        }
+        .logo1 {
+          height: 40px;
+        }
+        .content-section {
+          text-align: justify;
+        }
+        .hero h2 {
+          text-align: justify;
+        }
       }
-      .logo {
-        height: 25px;
-        align-items: justify;
-      }
-      .logo1{
-        height: 40px;
-      }
-      .content-section {
-        text-align: justify;
-      }
-      .hero h2{
-        text-align: justify;
-      }
-    }
     </style>
   </head>
   <body>
@@ -109,7 +185,7 @@
               <a href="track-coordinators.html">Track Coordinators</a>
             </div>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
           <li><a href="#" class="submit-paper">Submit Paper</a></li>
         </ul>
       </nav>
@@ -167,17 +243,28 @@
       </section>
     </main>
 
+    <section class="contact">
+      <h2 id="contact">Contact Us</h2>
+      <p class="email">cvmconference.sdstd2025@cvmu.edu.in</p>
+      <form>
+        <input type="email" placeholder="Your Email Address *" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <div id="map"></div>
+
     <footer>
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <p>Design And Develop By</p>
+          <a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
         </div>
       </div>
     </footer>
 
+    <script src="scriptContact.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

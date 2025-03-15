@@ -6,7 +6,8 @@
 }
 
 .section-description {
-  max-width: 900px;
+  max-width: 1200px;
+  align-content: center;
   margin: 0 auto 3rem;
   text-align: justify;
   color: #475569;

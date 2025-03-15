@@ -13,7 +13,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      
+
       .content h1 {
         text-align: center;
         color: #007bff;
@@ -68,10 +68,20 @@
         .content div,
         h1 {
           text-align: justify;
+          align-items: center;
+          /* justify-content: center; */
         }
         .date-item,
         .date-content {
           text-align: justify;
+          align-items: center;
+        }
+        .date-content {
+          height: auto;
+          width: 320px;
+        }
+        .date-item::before {
+          left: 80px;
         }
       }
     </style>
@@ -115,7 +125,7 @@
               <a href="track-coordinators.html">Track Coordinators</a>
             </div>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
           <li><a href="#" class="submit-paper">Submit Paper</a></li>
         </ul>
       </nav>
@@ -127,51 +137,43 @@
         <div class="dates-timeline">
           <div class="date-item">
             <div class="date">September 15, 2024</div>
-            <div class="date-content" style="text-align: justify">
+            <div class="date-content">
               Announcement of the conference and paper submission
             </div>
           </div>
 
           <div class="date-item">
             <div class="date">March 1, 2025</div>
-            <div class="date-content" style="text-align: justify">
-              Last date of submission of Papers
-            </div>
+            <div class="date-content">Last date of submission of Papers</div>
           </div>
 
           <div class="date-item">
             <div class="date">March 15, 2025</div>
-            <div class="date-content" style="text-align: justify">
-              Extension for paper submission
-            </div>
+            <div class="date-content">Extension for paper submission</div>
           </div>
 
           <div class="date-item">
             <div class="date">April 10, 2025</div>
-            <div class="date-content" style="text-align: justify">
+            <div class="date-content">
               Intimation for paper acceptance and Registration starts
             </div>
           </div>
 
           <div class="date-item">
             <div class="date">May 1, 2025</div>
-            <div class="date-content" style="text-align: justify">
-              Last date of registration
-            </div>
+            <div class="date-content">Last date of registration</div>
           </div>
 
           <div class="date-item">
             <div class="date">June 1, 2025</div>
-            <div class="date-content" style="text-align: justify">
+            <div class="date-content">
               Last date of submission of camera-ready copy and copy right form
             </div>
           </div>
 
           <div class="date-item">
             <div class="date">June 27, 2025</div>
-            <div class="date-content" style="text-align: justify">
-              Conference starts
-            </div>
+            <div class="date-content">Conference starts</div>
           </div>
         </div>
       </section>
@@ -181,9 +183,7 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <p>Design And Develop By </p><a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
         </div>
       </div>
     </footer>

@@ -62,6 +62,10 @@ nav {
   position: relative;
 }
 
+.nav-links a:hover {
+  background: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
+}
+
 .nav-links a:not(.submit-paper)::after {
   content: "";
   position: absolute;
@@ -69,7 +73,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #007bff;
+  /* background-color: #007bff; */
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -78,7 +82,7 @@ nav {
 .nav-links a.active::after {
   width: 100%;
   color: #000 !important;
-  background: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
+  /* background: linear-gradient(to right, #cffafe 0%, #dbeafe 100%); */
   /* -webkit-text-fill-color: transparent; */
 }
 
@@ -344,7 +348,11 @@ footer {
 .footer-links a {
   margin-left: 1rem;
   text-decoration: none;
-  color: #666;
+  text-align: center;
+  /* color: #666; */
+  background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-links a:hover {
@@ -624,6 +632,7 @@ h2 {
   margin-bottom: 1rem;
   padding-left: 1.5rem;
   position: relative;
+  list-style: none;
 }
 
 .guidelines-list li::before {
