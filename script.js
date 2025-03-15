@@ -43,7 +43,7 @@ dropdownItems.forEach(item => {
 });
 
 // Mobile menu functionality
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenuBtn = document.querySelector('.menu-btn');
 const nav = document.querySelector('nav');
 
 if(mobileMenuBtn) {
@@ -60,4 +60,12 @@ if(window.innerWidth <= 768) {
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         });
     });
+}
+
+function toggleMenu() {
+    document.getElementById("mobileNav").classList.add("active");
+}
+
+function closeMenu() {
+    document.getElementById("mobileNav").classList.remove("active");
 }
