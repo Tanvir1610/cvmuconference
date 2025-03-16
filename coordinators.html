@@ -61,6 +61,7 @@
         color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         font-size: 20px;
         cursor: pointer;
+        text-align: left;
       }
 
       /* Mobile Navbar (Sidebar) */
@@ -90,7 +91,8 @@
         font-size: 24px;
         align-self: flex-end;
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: auto;
+        text-align: left;
       }
 
       .mobile-nav a {
@@ -153,6 +155,9 @@
         .menu-btn {
           display: block;
         }
+        .logo-container {
+          gap: 1rem;
+        }
       }
       .call-papers h1 {
         text-align: center;
@@ -189,14 +194,11 @@
           height: 25px;
           align-items: justify;
         }
-        .logo1 {
-          height: 40px;
-        }
-        .coordinators-section h1,
+        /* .coordinators-section h1,
         h2,
         p {
           text-align: justify;
-        }
+        } */
       }
     </style>
   </head>
@@ -204,10 +206,10 @@
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
         <img src="cvm.png" alt="CVM" class="logo" />
-        <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
+        <img src="adit.png" alt="ADIT" class="logo" />
         <img src="mbit.png" alt="MBIT" class="logo" />
       </div>
       <nav>
@@ -241,7 +243,7 @@
             </div>
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
-          <li><a href="#" class="submit-paper">Submit Paper</a></li>
+          <li><a href="#" class="submit-paper" style="color: #000 !important;">Submit Paper</a></li>
         </ul>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
       </nav>
@@ -302,7 +304,7 @@
               <div class="coordinator-info">
                 <h3>Dr. Shivmurti Srivastav</h3>
                 <p>Professor & Head,<br />Food Proc. & Tech., ADIT</p>
-                <button class="more-btn" onclick="toggleDetails(this)">
+                <button class="more-btn" onclick="toggleDetails(this)" href="">
                   More
                 </button>
                 <div class="additional-info hidden">
@@ -360,8 +362,7 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By</p>
-          <a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
+          <p>Design And Develop By <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Dev Ray</a><a href="https://www.linkedin.com/in/tanvirahmadvhora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tanvir Vhora</a><a href="https://www.linkedin.com/in/nensi-chavda-b7baa3253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nensi Chavda</a></p>
         </div>
       </div>
     </footer>

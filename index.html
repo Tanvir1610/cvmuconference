@@ -10,7 +10,8 @@
         animation: slideUp 0.8s ease-in;
         text-align: justify;
       }
-
+      .conference-logo {transition: transform 0.3s ease;}
+      .conference-logo:hover{transform: scale(1.5);}
       .navbar {
         /* padding: 15px; */
         display: flex;
@@ -42,6 +43,8 @@
         color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         font-size: 20px;
         cursor: pointer;
+        text-align: left;
+        margin-left: 10px;
       }
 
       /* Mobile Navbar (Sidebar) */
@@ -72,6 +75,7 @@
         align-self: flex-end;
         cursor: pointer;
         margin-right: 15px;
+        text-align: left;
       }
 
       .mobile-nav a {
@@ -119,6 +123,9 @@
 
         .menu-btn {
           display: block;
+        }
+        .logo-container {
+          gap: 1rem;
         }
       }
 
@@ -204,6 +211,7 @@
         color: #fff !important;
         background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
         /* -webkit-text-fill-color: transparent; */
+        margin-right: 15px;
         animation: fadeIn 1s ease;
       }
 
@@ -246,9 +254,9 @@
           align-items: justify;
         }
 
-        .logo1 {
+        /* .logo1 {
           height: 40px;
-        }
+        } */
 
         .content-section {
           text-align: justify;
@@ -264,7 +272,7 @@
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
@@ -303,11 +311,17 @@
           <li><a href="#contact">Contact Us</a></li>
           <li>
             <a href="#" class="submit-paper" style="color: #000 !important"
-              >Submit Paper</a
-            >
+              >Submit Paper</a>
           </li>
         </ul>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <!-- <div class="logo-container">
+          <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
+          <img src="cvm.png" alt="CVM" class="logo" />
+          <img src="gcet.png" alt="GCET" class="logo" />
+          <img src="adit.png" alt="ADIT" class="logo" />
+          <img src="mbit.png" alt="MBIT" class="logo" />
+        </div> -->
       </nav>
       <div class="mobile-nav" id="mobileNav">
         <button class="close-btn" onclick="toggleClose()">✖</button>
@@ -411,8 +425,8 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By</p>
-          <a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
+          <p>Design And Develop By <a href="https://www.linkedin.com/in/tanvirahmadvhora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tanvir Vhora</a><a href="https://www.linkedin.com/in/nensi-chavda-b7baa3253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nensi Chavda</a><a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Dev Ray</a></p>
+          
         </div>
       </div>
     </footer>

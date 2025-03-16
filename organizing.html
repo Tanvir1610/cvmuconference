@@ -60,6 +60,7 @@
         color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         font-size: 20px;
         cursor: pointer;
+        text-align: left;
       }
 
       /* Mobile Navbar (Sidebar) */
@@ -89,7 +90,7 @@
         font-size: 24px;
         align-self: flex-end;
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: auto;
       }
 
       .mobile-nav a {
@@ -152,6 +153,9 @@
         .menu-btn {
           display: block;
         }
+        .logo-container {
+          gap: 2rem;
+        }
       }
       .call-papers h1 {
         text-align: center;
@@ -162,6 +166,9 @@
         background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
         /* -webkit-text-fill-color: transparent; */
         animation: fadeIn 1s ease;
+      }
+      p{
+        font-size: 1.1rem;
       }
       .member-name,
       .member-role {
@@ -192,9 +199,6 @@
           height: 25px;
           align-items: justify;
         }
-        .logo1 {
-          height: 40px;
-        }
         .member-image {
           height: 280px;
           width: 280px;
@@ -203,16 +207,19 @@
         .member-role {
           text-align: center;
         }
+        p{
+          font-size: 0.9rem;
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
         <img src="cvm.png" alt="CVM" class="logo" />
-        <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
+        <img src="adit.png" alt="ADIT" class="logo" />
         <img src="mbit.png" alt="MBIT" class="logo" />
       </div>
       <nav>
@@ -246,7 +253,7 @@
             </div>
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
-          <li><a href="#" class="submit-paper">Submit Paper</a></li>
+          <li><a href="#" class="submit-paper" style="color: #000 !important;">Submit Paper</a></li>
         </ul>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
       </nav>
@@ -282,7 +289,7 @@
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
         <li><a href="#" class="submit-paper">Submit Paper</a></li>
-      </div>`
+      </div>
     </header>
 
     <main>
@@ -303,18 +310,6 @@
         <div class="committee-grid">
           <div class="committee-member">
             <img
-              src="ManishBhai.jpeg"
-              alt="Shri Manishbhai S. Patel"
-              class="member-image"
-            />
-            <div class="member-info">
-              <h3 class="member-name">Shri Manishbhai S. Patel</h3>
-              <p class="member-role">Vice President, CVM University</p>
-            </div>
-          </div>
-
-          <div class="committee-member">
-            <img
               src="Bikhubhai.jpeg"
               alt="Er. Bhikhubhai B. Patel"
               class="member-image"
@@ -326,7 +321,17 @@
               </p>
             </div>
           </div>
-
+          <div class="committee-member">
+            <img
+              src="ManishBhai.jpeg"
+              alt="Shri Manishbhai S. Patel"
+              class="member-image"
+            />
+            <div class="member-info">
+              <h3 class="member-name">Shri Manishbhai S. Patel</h3>
+              <p class="member-role">Vice President, CVM University</p>
+            </div>
+          </div>
           <div class="committee-member">
             <img
               src="Dr. S. G. Patel.jpg"
@@ -343,14 +348,6 @@
         <h2>Organizing Chair</h2>
         <div class="committee-grid">
           <div class="committee-member">
-            <img src="Dr.MP.jpg" alt="Dr. Maulika Patel" class="member-image" />
-            <div class="member-info">
-              <h3 class="member-name">Dr. Maulika Patel</h3>
-              <p class="member-role">Principal, MBIT</p>
-            </div>
-          </div>
-
-          <div class="committee-member">
             <img src="KN.jpg" alt="Dr. Kaushik Nath" class="member-image" />
             <div class="member-info">
               <h3 class="member-name">Dr. Kaushik Nath</h3>
@@ -365,6 +362,13 @@
               <p class="member-role">Principal, ADIT</p>
             </div>
           </div>
+          <div class="committee-member">
+            <img src="Dr.MP.jpg" alt="Dr. Maulika Patel" class="member-image" />
+            <div class="member-info">
+              <h3 class="member-name">Dr. Maulika Patel</h3>
+              <p class="member-role">Principal, MBIT</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -373,8 +377,7 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By</p>
-          <a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
+          <p>Design And Develop By <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Dev Ray</a><a href="https://www.linkedin.com/in/tanvirahmadvhora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tanvir Vhora</a><a href="https://www.linkedin.com/in/nensi-chavda-b7baa3253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nensi Chavda</a></p>
         </div>
       </div>
     </footer>

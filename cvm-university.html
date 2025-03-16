@@ -67,6 +67,7 @@
       color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
       font-size: 20px;
       cursor: pointer;
+      text-align: left;
     }
 
     /* Mobile Navbar (Sidebar) */
@@ -96,7 +97,7 @@
         font-size: 24px;
         align-self: flex-end;
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: auto;
       }
 
       .mobile-nav a {
@@ -159,6 +160,9 @@
       .menu-btn {
         display: block;
       }
+      .logo-container {
+        gap: 2rem;
+      }
     }
 
     .submit-paper {
@@ -208,10 +212,6 @@
         height: 25px;
       }
 
-      .logo1 {
-        height: 35px;
-      }
-
       .content-section h1,
       p {
         text-align: justify;
@@ -220,6 +220,7 @@
       .content-section h2,
       p {
         text-align: justify;
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -228,7 +229,7 @@
 <body>
   <header>
     <div class="logo-container">
-      <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
+      <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
       <img src="cvm.png" alt="CVM" class="logo" />
       <img src="adit.png" alt="ADIT" class="logo" />
       <img src="gcet.png" alt="GCET" class="logo" />
@@ -265,7 +266,7 @@
           </div>
         </li>
         <li><a href="index.html#contact">Contact Us</a></li>
-        <li><a href="#" class="submit-paper">Submit Paper</a></li>
+        <li><a href="#" class="submit-paper" style="color: #000 !important;">Submit Paper</a></li>
       </ul>
       <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </nav>
@@ -360,14 +361,14 @@
     <p>Three engineering colleges are functioning under CVM University:</p>
     <ul class="college-list">
       <li>
-        A D Patel Institute of Technology (Estd. 2000) -
-        <a href="http://adit.ac.in" target="_blank" style="background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        G H Patel College of Engineering & Technology (Estd. 1997) -
+        <a href="https://www.gcet.ac.in" target="_blank" style="background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;">Website</a>
       </li>
       <li>
-        G H Patel College of Engineering & Technology (Estd. 1997) -
-        <a href="https://www.gcet.ac.in" target="_blank" style="background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
+        A D Patel Institute of Technology (Estd. 2000) -
+        <a href="http://adit.ac.in" target="_blank" style="background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;">Website</a>
       </li>
@@ -384,7 +385,7 @@
     <div class="footer-content">
       <p>© 2025 SDSTD Conference. All rights reserved.</p>
       <div class="footer-links">
-        <p>Design And Develop By </p><a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
+        <p>Design And Develop By <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Dev Ray</a><a href="https://www.linkedin.com/in/tanvirahmadvhora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tanvir Vhora</a><a href="https://www.linkedin.com/in/nensi-chavda-b7baa3253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nensi Chavda</a></p>
       </div>
     </div>
   </footer>

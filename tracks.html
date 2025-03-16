@@ -61,6 +61,7 @@
         color: linear-gradient(to right, #cffafe 0%, #dbeafe 100%);
         font-size: 20px;
         cursor: pointer;
+        text-align: left;
       }
 
       /* Mobile Navbar (Sidebar) */
@@ -90,7 +91,7 @@
         font-size: 24px;
         align-self: flex-end;
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: auto;
       }
 
       .mobile-nav a {
@@ -153,6 +154,9 @@
         .menu-btn {
           display: block;
         }
+        .logo-container {
+          gap: 2rem;
+        }
       }
       .content h1 {
         text-align: center;
@@ -189,21 +193,24 @@
           height: 25px;
           align-items: justify;
         }
-        .logo1 {
-          height: 40px;
-        }
-        .content h1,
-        .track h2,
-        ul li {
+        .track h2 {
           text-align: justify;
+          margin-bottom: 0.5rem;
+          font-size: 1.0rem;
         }
+        .track ul {
+          font-size: 0.8rem;
+        }
+        /* .track li {
+          text-align: justify;
+        } */
       }
     </style>
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img src="SDSTD2025.png" alt="SDSTD" class="logo1" />
+        <img src="SDSTD2025.png" alt="SDSTD" class="logo" />
         <img src="cvm.png" alt="CVM" class="logo" />
         <img src="adit.png" alt="ADIT" class="logo" />
         <img src="gcet.png" alt="GCET" class="logo" />
@@ -240,7 +247,7 @@
             </div>
           </li>
           <li><a href="index.html#contact">Contact Us</a></li>
-          <li><a href="#" class="submit-paper">Submit Paper</a></li>
+          <li><a href="#" class="submit-paper" style="color: #000 !important;">Submit Paper</a></li>
         </ul>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
       </nav>
@@ -285,76 +292,32 @@
         <br />
         <div class="track-content">
           <div class="track">
-            <h2>
-              Track 1: Mechanical, Mechatronics, Automobile, Automation &
-              Robotics
-            </h2>
+            <h2>Track 1: Mechanical, Mechatronics, Automobile, Automation & Robotics</h2>
             <ul>
-              <li>
-                Robotics & Automation, Sensor, Machine Vision, Signal Processing
-              </li>
-              <li>
-                MEMS & Nanotechnology, Mechatronics System Design, Futuristic
-                industry & Digital manufacturing
-              </li>
-              <li>
-                FEA, CAD, Optimization techniques in Mechanical Engineering
-              </li>
+              <li>Robotics & Automation, Sensor, Machine Vision, Signal Processing</li>
+              <li>MEMS & Nanotechnology, Mechatronics System Design, Futuristic industry & Digital manufacturing</li>
+              <li>FEA, CAD, Optimization techniques in Mechanical Engineering</li>
               <li>Heat and Mass Transfer Enhancement Techniques</li>
-              <li>
-                Manufacturing Process Modelling, Analysis, Optimization and
-                Simulation
-              </li>
-              <li>
-                Electric & Hybrid Vehicles and Alternative fuels, Vehicular
-                design
-              </li>
+              <li>Manufacturing Process Modelling, Analysis, Optimization and Simulation</li>
+              <li>Electric & Hybrid Vehicles and Alternative fuels, Vehicular design</li>
               <li>Safety systems and emission technologies</li>
-              <li>
-                Smart Manufacturing Techniques & Industry 4.0, Lean
-                Manufacturing and Six Sigma
-              </li>
+              <li>Smart Manufacturing Techniques & Industry 4.0, Lean Manufacturing and Six Sigma</li>
               <li>Computational Fluid Dynamics</li>
             </ul>
           </div>
 
           <div class="track">
-            <h2>
-              Track 2: Food Processing and Dairy Technology, Chemical and Civil
-              Engineering
-            </h2>
+            <h2>Track 2: Food Processing and Dairy Technology, Chemical and CivilEngineering</h2>
             <ul>
-              <li>
-                Advances in Food Processing and Dairy technologies, Innovations
-                in sustainable Food Processing and Dairy technologies
-              </li>
-              <li>
-                Advanced technologies, Recent innovations in fermented food and
-                dairy products
-              </li>
-              <li>
-                Sustainable packaging technologies in food and dairy products
-              </li>
-              <li>
-                Waste and water treatments, Energy and Environment, Novel
-                separation technologies
-              </li>
-              <li>
-                Biomass utilization, Green Chemistry, Sustainable and clean
-                technologies
-              </li>
-              <li>
-                Mathematical modelling, Reaction engineering, Process design and
-                System
-              </li>
-              <li>
-                Instrumentation and control, Separation and purification
-                Processes
-              </li>
+              <li>Advances in Food Processing and Dairy technologies, Innovationsin sustainable Food Processing and Dairy technologies</li>
+              <li>Advanced technologies, Recent innovations in fermented food and dairy products</li>
+              <li>Sustainable packaging technologies in food and dairy products</li>
+              <li>Waste and water treatments, Energy and Environment, Novel separation technologies</li>
+              <li>Biomass utilization, Green Chemistry, Sustainable and cleantechnologies</li>
+              <li>Mathematical modelling, Reaction engineering, Process design and System</li>
+              <li>Instrumentation and control, Separation and purification Processes</li>
               <li>Nanotechnology, Polymers and Porous materials</li>
-              <li>
-                Biochemical and Bioengineering, Advanced structural design
-              </li>
+              <li>Biochemical and Bioengineering, Advanced structural design</li>
               <li>Hydraulics and Water resources Engineering</li>
               <li>Sustainable Construction materials and Technology</li>
               <li>Smart Mobility, Geomatics, Geoscience, Remote Sensing</li>
@@ -368,10 +331,7 @@
               Track 3: Electrical, Electronics and Communication Engineering
             </h2>
             <ul>
-              <li>
-                Analog and Mixed Signal Circuits and Systems, Digital Circuits
-                and Systems
-              </li>
+              <li>Analog and Mixed Signal Circuits and Systems, Digital Circuits and Systems</li>
               <li>Power/Energy Devices, Circuits and Systems</li>
               <li>Communication Circuits and Systems</li>
               <li>High Speed and Optical Wire lines, Circuits and Systems</li>
@@ -384,10 +344,7 @@
               <li>Applications of AI to Power Systems and Power Electronics</li>
               <li>Smart Grid Technologies</li>
               <li>Renewable Energy Sources and Electric Vehicles</li>
-              <li>
-                Condition Monitoring of Electrical Apparatus and High Voltage
-                Engineering
-              </li>
+              <li>Condition Monitoring of Electrical Apparatus and High Voltage Engineering</li>
               <li>RF & Microwave Engg., Antenna and RFIC design</li>
             </ul>
           </div>
@@ -415,8 +372,7 @@
       <div class="footer-content">
         <p>© 2025 SDSTD Conference. All rights reserved.</p>
         <div class="footer-links">
-          <p>Design And Develop By</p>
-          <a href="#">Tanvir</a><a href="#">Nensi</a><a href="#">Dev</a>
+          <p>Design And Develop By <a href="https://www.linkedin.com/in/dev-ray-886a72284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Dev Ray</a><a href="https://www.linkedin.com/in/tanvirahmadvhora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Tanvir Vhora</a><a href="https://www.linkedin.com/in/nensi-chavda-b7baa3253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nensi Chavda</a></p>
         </div>
       </div>
     </footer>

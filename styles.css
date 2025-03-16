@@ -24,7 +24,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  gap: 2rem;
+  gap: 10rem;
   background-color: #f8f9fa;
 }
 
@@ -36,6 +36,7 @@ header {
 
 .logo:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 /* Navigation Styles */
@@ -213,11 +214,27 @@ nav {
 .track ul {
   list-style-position: inside;
   margin-left: 1rem;
+  margin-top: 0.8rem;
 }
 
 .track li {
   margin-bottom: 0.5rem;
   color: #555;
+  position: relative;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: -0.5px;
+  hyphens: auto;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.track li::before {
+  content: "→";
+  color: #007bff;
+  /* position: absolute; */
+  text-align: justify;
+  left: 0;
 }
 
 /* Hero Section Styles */
@@ -651,6 +668,7 @@ h2 {
 }
 
 .coordinator-card {
+  display: flex;
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -664,8 +682,8 @@ h2 {
 
 .coordinator-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  /* height: 100%; */
+  object-fit: contain;
 }
 
 .coordinator-info {
