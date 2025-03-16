@@ -224,8 +224,8 @@ nav {
 
 .track ul li {
   margin-top: 0.5rem;
-  margin-bottom: 8px; /* Reduce spacing */
-  line-height: 1.4; /* Improve readability */
+  margin-bottom: 8px; 
+  line-height: 1.4; 
 }
 
 .track li {
@@ -238,6 +238,8 @@ nav {
   hyphens: auto;
   list-style: none;
   font-size: 1rem;
+  display: flex;
+  gap: 5px;
 }
 
 .track li::before {
