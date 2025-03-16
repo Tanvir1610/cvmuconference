@@ -14,7 +14,7 @@ function initMap() {
     });
 
     var infoWindow = new google.maps.InfoWindow({
-        content: '<strong>CVM University Office</strong><br>*It is the location of the Conference (GCET Auditorium) <br><a href="https://maps.app.goo.gl/pR7ovJCzaCmDKg5PA" target="_blank">Google Maps Link</a>'
+        content: '<strong>CVM University(GCET College)</strong><br>*It is the location of the Conference (GCET Auditorium) <br><a href="https://maps.app.goo.gl/pR7ovJCzaCmDKg5PA" target="_blank">Google Maps Link</a>'
     });
 
     marker.addListener("click", function () {

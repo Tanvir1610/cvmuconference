@@ -210,15 +210,26 @@ nav {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
+.track-content {
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px; /* Adjusted padding */
+}
 
 .track ul {
-  list-style-position: inside;
-  margin-left: 1rem;
-  margin-top: 0.8rem;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.track ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 8px; /* Reduce spacing */
+  line-height: 1.4; /* Improve readability */
 }
 
 .track li {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   color: #555;
   position: relative;
   text-align: justify;
@@ -235,6 +246,45 @@ nav {
   /* position: absolute; */
   text-align: justify;
   left: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevent side scrolling */
+        text-align: justify; /* Improve text alignment */
+    }
+
+    .track-content {
+        width: 95%; /* Reduce width for better fit */
+        padding: 5px; /* Reduce padding */
+    }
+
+    .track {
+        padding: 10px;
+    }
+
+    /* Fix Navigation Bar Spacing */
+    .mobile-nav {
+        width: 250px; /* Ensure proper width */
+        padding: 20px; /* Reduce excessive padding */
+    }
+
+    /* Fix Text Overflow Issues */
+    h2, h1 {
+        font-size: 20px; /* Adjust heading size */
+        white-space: normal; /* Ensure text wraps */
+    }
+
+    /* Ensure List Items Fit Screen */
+    .track ul {
+        padding-left: 15px;
+    }
+
+    .track li {
+        font-size: 14px;
+        line-height: 1.4;
+        word-wrap: break-word; /* Prevent overflow */
+    }
 }
 
 /* Hero Section Styles */
@@ -363,9 +413,9 @@ footer {
 }
 
 .footer-links a {
-  margin-left: 1rem;
+  margin-left: 0.1rem;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
   /* color: #666; */
   background: linear-gradient(to right, #2563eb 0%, #06b6d4 100%);
   -webkit-background-clip: text;
@@ -421,9 +471,9 @@ footer {
     gap: 1rem;
   }
 
-  .footer-links a {
+  /* .footer-links a {
     margin: 0 0.5rem;
-  }
+  } */
 }
 
 /* Schedule Page Styles */
