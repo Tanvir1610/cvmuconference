@@ -179,8 +179,8 @@ nav {
 
 .track-section {
   background-color: #f8f9fa;
-  padding: 3rem 0;
-  margin: 3rem 0;
+  /* padding: 3rem 0; */
+  margin: 1.5rem 0;
 }
 
 .track-container {
@@ -469,7 +469,7 @@ footer {
 
   .footer-content {
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
     gap: 1rem;
   }
 

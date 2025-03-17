@@ -6,12 +6,12 @@
 }
 
 .section-description {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   align-content: center;
-  margin: 0 auto 3rem;
   text-align: justify;
   color: #475569;
-  line-height: 1.8;padding: 1rem;
+  line-height: 1.8;
+  padding: 1.5rem;
 }
 
 h1 {
